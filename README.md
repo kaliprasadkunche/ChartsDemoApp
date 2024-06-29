@@ -1,46 +1,87 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Chart Analysis Application
 
-## Available Scripts
+This is a React-based web application for displaying various types of charts (line chart, bar chart, pie chart, scatter chart) based on different timeframes (daily, weekly, monthly).
 
-In the project directory, you can run:
+![Untitled design](https://github.com/kaliprasadkunche/ChartsDemoApp/assets/113325469/9b9f0966-80c7-415d-880e-cd9621d54f56)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Dynamic Chart Rendering:** Display different types of charts (line, bar, pie, scatter) based on selected timeframe.
+- **Interactive Timeframe Selector:** Allows users to switch between daily, weekly, and monthly data views.
+- **Data Export:** Each chart can be exported as a PNG image for further use.
+- **Responsive Design:** Supports both desktop and mobile views.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React:** Frontend framework for building user interfaces.
+- **Material-UI:** Provides styled React components for a consistent UI.
+- **ECharts:** JavaScript charting library for interactive visualizations.
+- **Axios:** Promise-based HTTP client for making API requests.
+- **CSS Modules:** Local scoped CSS by default in React applications.
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+├── public
+│   └── index.html
+├── src
+│   ├── components
+│   │   ├── Chart.tsx
+│   │   ├── BarChart.tsx
+│   │   ├── PieChart.tsx
+│   │   ├── ScatterChart.tsx
+│   │   └── TimeframeSelector.tsx
+│   ├── styles
+│   │   └── Chart.module.css
+│   ├── App.tsx
+│   └── index.tsx
+├── data.json
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your/repository.git
+   cd repository-name
+   ```
 
-### `npm run eject`
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. **Select Timeframes:**
+   Click on the "Day", "Week", or "Month" buttons to switch between different data views.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. **Export Charts:**
+   Each chart has an "Export as PNG" button to download the chart as an image.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Please follow the GitHub flow:
+- Fork the repository
+- Create a new branch (`git checkout -b feature/my-feature`)
+- Commit your changes (`git commit -am 'Add new feature'`)
+- Push to the branch (`git push origin feature/my-feature`)
+- Create a new Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Adjust the paths and details according to your project structure and specific requirements. This template provides a basic structure covering installation, usage, contribution guidelines, and license information.
