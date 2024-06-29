@@ -3,6 +3,8 @@
 
 This is a React-based web application for displaying various types of charts (line chart, bar chart, pie chart, scatter chart) based on different timeframes (daily, weekly, monthly).
 
+Demo Link : Open [[http://localhost:3000](https://charts-demo-app.vercel.app/)]
+
 ![Untitled design](https://github.com/kaliprasadkunche/ChartsDemoApp/assets/113325469/9b9f0966-80c7-415d-880e-cd9621d54f56)
 
 
