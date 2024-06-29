@@ -1,0 +1,61 @@
+.card {
+    width: 90%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartRow {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .app {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+
+  .appContainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chartRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .chartItem {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .chartButton{
+    border-radius: 7px;
+    border-style: hidden;
+    padding: 10px;
+    margin: 7px;
+  }
+  
+  @media (max-width: 768px) {
+    .chartRow {
+      flex-direction: column;
+    }
+  
+    .chartItem {
+      margin-bottom: 20px;
+    }
+  }
+  
